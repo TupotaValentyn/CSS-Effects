@@ -25,14 +25,12 @@ ul > li{
 	display: grid;
 	border-radius: 5px;
 	opacity: .8;
-
 }
 
 ul{
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: 35vh 35vh;
-	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 10px;
 }
 
 a{	
