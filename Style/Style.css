@@ -35,4 +35,17 @@ ul{
 	grid-gap: 5px;
 }
 
+a{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+	grid-template-rows: 10vh 10vh;
+}
+a > p,h3{
+	margin-left: 10px;
+	justify-self: center
+}
+
+
 
