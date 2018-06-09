@@ -35,12 +35,14 @@ ul{
 	grid-gap: 5px;
 }
 
-a{
+a{	
 	display: grid;
 	align-items: center;
 	justify-content: center;
 	font-size: 1.2em;
 	grid-template-rows: 10vh 10vh;
+	text-decoration: none;
+	color: #000;
 }
 a > p,h3{
 	margin-left: 10px;
