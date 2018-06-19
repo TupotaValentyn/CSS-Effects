@@ -16,7 +16,7 @@ span{
 	display: block;
 	width: 600px;
 	height: 850px;
-	animation-duration: 10s;
+	animation-duration: 12s;
 	animation-name: hovereffects;
 }
 
@@ -24,34 +24,33 @@ span{
 
 @keyframes hovereffects{
 	0%{
-		background: #fff;
+		background: #111;
+		opacity: 0;
+		transition: 2s;
 			
 	}
 	15%{
-		background: #ff2;
-		animation-duration: 2s;
-		animation-name: hovereopacity;
+		opacity: .5;
+		transition: 1s;
 
 	}
 	25%{
-		animation-duration: 2s;
-		animation-name: hovereopacity;
+		opacity: 1;
 		background-image: url(./../img/1.jpg);
-		filter: grayscale(100%);
+		transition: 2s;
+	
+	}
+	35%{
+		opacity: 0;
 	}
 	50%{
-		animation-duration: 2s;
-		animation-name: hovereopacity;
+		opacity: 1;
 		background-image: url(./../img/2.jpg);
 	}
 	75%{
-		animation-duration: 2s;
-		animation-name: hovereopacity;
 		background-image: url(./../img/3.jpg);
 	}
 	100%{
-		animation-duration: 2s;
-		animation-name: hovereopacity;
 		background-image: url(./../img/4.jpg);
 	}
 }
