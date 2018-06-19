@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Eater');
+
 body{
 	margin: 0;padding: 0;
 	width: 100vw;height: 100vh;
@@ -14,17 +16,49 @@ body{
 }
 .wrapper2{
 	width: 100%;height: 100%;
-	position: absolute;
-	top: 0%;
+/*	position: absolute;
+	top: 0%;*/
 	animation: gradientAnimation 20s reverse infinite;
 	transition: 2s;
 	-webkit-clip-path: polygon(0% 100%, 100% 0, 100% 100%);
 }
 
+.content{
+	background: #f2f2f2;
+	width: 100vw;height: 200vh;
+	-webkit-clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
+	position: absolute;
+	top: 0;
+}
+
+
+h1{
+	font-family: 'Eater', cursive;
+	font-size: 3.5em;
+	padding: .1em;
+	letter-spacing: .2em;
+	position: absolute;
+	top: 40%; left:50%;
+	transform: translate(-50%, -50%) rotate(-26deg);
+	white-space:nowrap;
+/*	animation: ColorAnimation 10s infinite;
+	filter:blur(4px); */
+
+}
+
+h1:first-letter{
+	font-size: 3em;
+	color: black;
+	filter: blur(3px);
+}
+
+
+
 
 @keyframes gradientAnimation{
 	from{
 		background: #FFC0CB;
+
 	}
 	10%{
 		background: #FFE4E1;
@@ -58,3 +92,49 @@ body{
 	}
 
 }
+
+@keyframes ColorAnimation{
+	from{
+		color: #FFC0CB;
+		filter: blur(1px);
+	}
+	10%{
+		color: #FFE4E1;
+		filter: blur(2px);
+	}
+	20%{
+		color: #E6E6FA;
+		filter: blur(3px);	
+	}
+	30%{
+		color: #D3FFCE;
+		filter: blur(1px);
+	}
+	40%{
+		color: #FF7373;
+		opacity: .8;
+	}
+	50%{
+		color: #FF0000;
+		opacity: .5;
+	}
+	60%{
+		color: #800000;
+		opacity: .8;
+	}
+	70%{
+		color: #F08080;
+		opacity: .5;
+	}
+	80%{
+		color: #468499;
+	}
+	90%{
+		color: #66CDAA;
+	}
+	to{
+		color: #00CED1;
+	}
+
+}
+
