@@ -62,9 +62,12 @@ h1:first-letter{
 }
 
 h1:hover{
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 	cursor: pointer;
 	opacity: 1;
 	filter: blur(0);
+	transition: 1s;
 }
 
 h3{
@@ -79,12 +82,12 @@ h1, h2, h3, h4, h5{
 	background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+  	transition: 1s;
 }
 
 
 #main{
 	position: relative;
-	
 	background-size: 1123px 937px;
 
 	/*background-image: url('./../img/God.jpg');*/
