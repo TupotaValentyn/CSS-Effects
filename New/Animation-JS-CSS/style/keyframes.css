@@ -80,3 +80,21 @@
 	}
 
 }
+
+@keyframes wrapp1hover{
+	0%{
+		background-color: #72ecfa;
+	}
+	25%{
+		background-color: #72FAC4;
+	}
+	50%{
+		background-color: #FA72A8;
+	}
+	75%{
+		background-color: #C472FA;
+	}
+	from{
+		background-color: #FA8072;
+	}	
+}
