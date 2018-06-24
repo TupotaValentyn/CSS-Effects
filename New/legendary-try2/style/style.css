@@ -76,7 +76,6 @@ ul > li{
 	transition: 2s;
 	animation: mid-animation 2s;
 	animation-fill-mode: backwards;
-
 }
 
 @keyframes li-leter{
