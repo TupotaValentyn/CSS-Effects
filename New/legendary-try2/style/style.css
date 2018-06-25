@@ -128,7 +128,7 @@ ul > li:nth-of-type(9)
 
 @keyframes later-visible{
 	from{top: 25%; height: 0;}
-	to{top: 33%; height: 120px;}
+	to{top: 34%; height: 120px;}
 }
 
 @keyframes color-outline-block{
