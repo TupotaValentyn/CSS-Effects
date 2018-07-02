@@ -2,10 +2,18 @@
 
 :root{
 	--li-color: #;
-	--main-bg: url('./../img/christmas-dark.png');
+	--main-bg: url('./../img/bgf.jpg');
+	--font-size-r:calc(1vmax - 1vmin + 0.5rem);
+	/*font for adaptive font*/
+	--f_color: #f06;
+	content:    'f06 f60'
+				'0f6 06f'
+				'6f0 60f'; 
+	/*set of colors*/
+
 }
 body{
-	height: 100vh;
+	height: 300vh;
 	width: 100%;
 }
 
@@ -29,7 +37,8 @@ ul > li{
 
 ul{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
 	grid-gap: 10px;
 }
 
@@ -45,6 +54,18 @@ a{
 a > p,h3{
 	margin-left: 10px;
 	justify-self: center
+}
+
+
+h2{
+	font-size: calc(var(--font-size-r) + 2.6rem);
+	text-transform: uppercase;
+	color: white;
+	width: 100%;
+	background: #000;
+	margin: .1em 0 .3em 0;
+	text-align: center;
+	mix-blend-mode: multiply;
 }
 
 
