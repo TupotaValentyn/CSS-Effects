@@ -20,10 +20,6 @@ body{
 	background-size: cover;
 }
 
-.center{
-
-}
-
 ul{
 	list-style: none;
 	white-space: nowrap;
@@ -92,7 +88,6 @@ h2{
 	animation: p-descent 1s linear 2s both;
 }
 
-
 .bottom1{
 	position: absolute;
 	bottom: 30px;
@@ -106,7 +101,6 @@ h2{
 	z-index: 0;
 	animation: block-descent 3s both;
 }
-
 
 @keyframes h1-spin{
 	from{
@@ -139,7 +133,6 @@ h2{
 		bottom: 30px;
 	}
 }
-
 
 @keyframes p-descent{
 	from{
