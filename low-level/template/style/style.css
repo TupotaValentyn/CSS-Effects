@@ -1,0 +1,37 @@
+:root{
+
+}
+
+html{
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #f06;
+}
+
+.wrapper{
+	display: grid;
+	background: inherit;
+	width: 100vw; height: 100vh;
+}
+
+section{
+	display: grid;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	width: auto; height: auto;
+	background: transparent;
+	grid-template-columns: repeat(4, 10vh);
+	grid-template-rows: repeat(4, 10vh);
+	grid-gap: 5px;
+
+
+}
+
+span{
+	background: lime;
+}

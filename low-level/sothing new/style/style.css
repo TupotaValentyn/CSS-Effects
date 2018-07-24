@@ -1,0 +1,109 @@
+:root{
+	--my-font-size: calc(1vmax - 2vmin + 1rem);
+}
+
+html{
+	font-size: var(--my-font-size);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	clear: both;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	transform-style: preserve-3d;
+}
+
+.wrapper{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	background: #262626;
+	transform-origin: center center 0;
+	perspective: 3000px;
+}
+
+.rubicka{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30vw; height: 30vw;
+	background: #000;
+	transform-origin: center center 0;
+	perspective: 3000px;
+
+}
+
+
+.cubick{
+	display: grid;
+	position: absolute;
+	grid-template-columns: repeat(3, 8vw);
+	grid-template-rows: repeat(3, 8vw);
+	grid-gap: .7vw;
+	/*background: white;*/
+}
+
+.top > div{
+	background: #fff;
+}
+.left > div{
+	background: #f00;
+}
+.bot > div{
+	background: #ff0;
+}
+.right > div{
+	background: #f06;
+}
+.back > div{
+	background: #0f0;
+}
+.front > div{
+	background: #00f;
+}
+
+.top{
+	transform: rotateX(90deg);
+	position: absolute;
+	top: -12.5vw;
+
+}
+.left{
+	transform: rotateY(-90deg);
+	position: absolute;
+	left: -12.5vw;
+}
+.bot{
+	transform: rotateX(-90deg);
+	position: absolute;
+	bottom: -8vw;
+}
+.right{
+	transform: rotateY(90deg);
+	position: absolute;
+	right: -8vw;
+}
+.back{
+	transform: rotate();
+}
+.front {
+	transform: rotate();
+}
+
+
+
+
+
+
+
+
+
+
+
+

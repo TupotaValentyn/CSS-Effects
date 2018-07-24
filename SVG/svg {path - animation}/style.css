@@ -1,0 +1,69 @@
+html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: table;
+	background: url('./228.jpg') no-repeat 50% 50%; 
+	background-size: cover;
+}
+
+.wrapper{
+	position: absolute;
+	top: 45%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	
+}
+
+path{
+	stroke: #fff;
+	/*fill: #fff;*/
+	stroke-dasharray: 10px 5px;
+	opacity: 1;
+	animation: dashoffset .1s infinite linear;
+	/*animation: animate 3s cubic-bezier(0,0.23,1,.1);*/
+}
+
+@keyframes dashoffset{
+	from{
+		stroke-dasharray: 10px 10px;
+	}
+	to{
+		stroke-dasharray: 10px 10px;
+		stroke-dashoffset: -100px;
+	}
+}
+
+
+/*@keyframes animate{
+	from{
+		opacity: 0;
+		fill: none;
+		stroke-dasharray: 1987;
+	}
+
+	30%{
+		opacity: 10;
+		fill: none;
+		stroke-dasharray: 1987;
+	}
+
+	90%{
+		fill: rgba(225,225,225,0);
+	}
+
+	to{
+		opacity: 10;
+		fill: rgba(225,225,225,1);
+		stroke-dasharray: 0;
+	}
+}*/
