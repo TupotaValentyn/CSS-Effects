@@ -1,0 +1,39 @@
+<!doctype html />
+
+<link rel="stylesheet" href="./../style/style.css" />
+
+<style>
+	.base{
+		fill: #ffc107; 
+		stroke: #f06; 
+		stroke-width: 2;
+	}
+</style>
+
+<div class="wrapper">
+
+	<svg class="border" 
+				width="600" height="400" viewBox="0 0 600 400"
+		>
+		<title>Figure</title>
+		<!-- прямоугольник -->
+		<rect 
+				x="50" y="100" width="200" height="100" 
+				style="fill: #ffc107; stroke: #f06; stroke-width: 2;"
+		></rect>
+		
+		<rect 
+				class="base" x="300" y="100" 
+				width="200" height="100" 
+		></rect>
+
+		<rect 	class="base" 
+				x="50" y="295" width="200" height="100" 
+				style="fill-opacity: .6; stroke-opacity: .7;"
+				rx="10" ry="10" 
+		></rect>
+			<!-- atrributes {rx | ry} have only rectangle, for effect border-radius -->
+		
+	</svg>
+		
+</div>

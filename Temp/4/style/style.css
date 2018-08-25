@@ -1,0 +1,59 @@
+ :root{
+    --my-font-size: calc(1vmax - 1vmin + 16px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transform-origin: center center;
+}
+html{
+    font-size: var(--my-font-size);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d
+}
+
+.wrapper{
+    width: inherit;
+    height: inherit;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first{
+    color: green;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.second{
+    color: red;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: .5;
+    
+}

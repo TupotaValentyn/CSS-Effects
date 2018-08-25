@@ -1,0 +1,65 @@
+:root{
+	--my-font-size: calc( 1vmax - 1vmin + 1rem / 2 );
+}
+
+html{
+	font-size: var(--my-font-size);
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+	color: #f06;
+	margin: 0; padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-y: scroll; overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+.wrapper{
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: calc( 60vh - 1vmax + 1vmin - 1rem );
+	transform-style: inherit;
+
+}
+
+.wrapper::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	right: 0; bottom: 0;
+	z-index: -2;
+	transform-origin: center;
+	min-height: 100vh;
+	background-image: url('./../landscape-3361927_1920.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: translateZ(-4px) scale(5);
+}
+
+/*.wrapper::after{
+	content: 'Lorem ipsum somethink new';
+	display: block;
+	position: absolute;
+	padding: 20%;
+	top: 0; left: 0;
+	right: 0; bottom: 0;
+	z-index: -1;
+	opacity: .3;
+	transform: translateZ(-2px) scale(3) rotate(25deg);
+	font-size: 3em;
+
+}*/
+
+ /*can add even more block for more beauteful paralax effects*/
+
+.wrapper h1{
+	margin-top: -100px;
+
+	
+}
