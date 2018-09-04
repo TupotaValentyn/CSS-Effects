@@ -1,0 +1,67 @@
+:root{
+  --my-width: 300px;
+  --my-height: 300px;
+  --my-border: 20px;
+}
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  clear: both;
+  transition: all 1s ease;
+}
+
+.wrapper{
+  display: block;
+  widows: 100vw; height: 100vh;
+  background: #f2f2f2;
+}
+
+.triangle{
+  position: absolute;
+  width: calc(var(--my-width));
+  height: calc(var(--my-height));
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f06;
+}
+
+.inner{
+  display: block;
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  width: var(--my-width);
+  height: var(--my-height);
+  clip-path: polygon(calc(var(--my-width) / 2) 0, var(--my-width) var(--my-height), 0 var(--my-height));
+  
+}
+
+.side{
+  display: block;
+  position: absolute;
+}
+
+.bottom{
+  background: #06f;
+  width: var(--my-width);
+  height: var(--my-border);
+  left: calc(var(--my-border)/2);
+  bottom: calc(-1*(var(--my-border)/2));
+}
+
+.left{
+  background: #06f;
+  height: var(--my-border);
+  left: -92.95px;
+}
+
+.right{
+  background: #06f;
+  width: 300px;
+  height: 400px;
+  height: var(--my-border);
+  right: -92.95px;
+
+}
