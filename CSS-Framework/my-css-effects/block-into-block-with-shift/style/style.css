@@ -1,0 +1,78 @@
+:root{
+	--shift: 100px;
+	--width: 150px;
+	--height: 150px;
+	--border: 15px;
+}
+
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+::before, ::after{box-sizing: inherit;}
+body{background: #d0d0d0;}
+
+.wrapper{
+	display: grid;
+	grid: 1fr/ 1fr;
+}
+
+.shape{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	height: var(--height); width: var(--width);
+	background: transparent;
+}
+
+.shape__all{
+	position: absolute;
+	width: 100%; height: 100%;
+	background: transparent;
+}
+
+.shape__into{
+	bottom: var(--shift);
+	left: var(--shift);
+	z-index: 0;
+	border: var(--border) solid blue;
+}
+
+.shape__two{
+	z-index: 1;
+	border: var(--border) solid #f07;
+	background: transparent;
+}
+
+.shape__more{
+	background: transparent;
+	width: calc(var(--width) - var(--shift) - var(--border)); 
+	height: calc(var(--height) - var(--shift) - var(--border));
+	z-index: 2;
+	border-bottom: var(--border) solid #fd4;
+	border-left: var(--border) solid #fd4;
+	top: var(--border); left: var(--shift);
+}
+
+.shape__more::after, .shape__more::before{
+	content: '';
+	position: absolute;
+	width: var(--border); height: var(--border);
+} 
+
+.shape__more::before{
+	background: linear-gradient( to bottom, blue , #fd4);
+	top: calc( -1 * var(--border)); left: calc( -1 * var(--border));
+}
+
+.shape__more::after{
+	display: none;
+	background: linear-gradient( to left ,blue , #fd4);
+	bottom: calc( -1 * var(--border)); right: calc( -1 * var(--border)); 	
+}
+
+img{
+	width: 100vw; height: 100vh;
+	object-fit: cover;
+}

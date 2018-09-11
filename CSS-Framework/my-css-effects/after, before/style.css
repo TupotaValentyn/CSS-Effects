@@ -1,0 +1,39 @@
+:root{
+	--size: 200px;
+	--border: 50px;
+}
+
+
+html{
+	background: #0f7;
+	height: 100%;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	display: grid;
+	grid: 1fr/ 1fr;
+	width: 100vw;
+	height: 100vh;
+}
+
+.shape{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: var(--size); height: var(--size);
+	background: #000;
+}
+
+.shape::before{
+	content: '';
+	position: absolute;
+	width: 100px; height: 100px;
+	top: -10px; left: -10px;
+	background: red;
+}

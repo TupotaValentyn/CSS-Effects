@@ -1,0 +1,47 @@
+:root{
+	--width-h: 150px;
+	--margin: 40px;
+}
+
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #d0d0d0;
+}
+
+::before, ::after{
+	box-sizing: inherit;
+	clear: both;
+}
+
+.wrapper{
+	display: grid;
+	grid: 1fr/ 1fr;
+}
+
+.shape{
+	/*filter: drop-shadow(10px 10px 1px black);*/
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	height: calc(var(--width-h) + var(--margin));
+	width: calc(var(--width-h) + var(--margin));
+	background: #FFF;
+}
+
+.some{
+	position: absolute;
+}
+
+.tirangle{
+	filter: drop-shadow(5px 5px 1px black);
+	top: calc(var(--margin) / 2);
+	left: calc(var(--margin) / 2); 
+	background: lime;
+	transform: rotate(90deg);
+	width: var(--width-h); height: var(--width-h);
+	clip-path: polygon( calc(var(--width-h) / 2) 0, var(--width-h) var(--width-h), 0 var(--width-h));
+}

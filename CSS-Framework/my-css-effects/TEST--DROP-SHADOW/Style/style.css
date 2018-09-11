@@ -1,0 +1,42 @@
+:root{
+	--size: 200px;
+	--border: 50px;
+}
+
+
+html{
+	background: #0f7;
+	height: 100%;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	display: grid;
+	grid: 1fr/ 1fr;
+	width: 100vw;
+	height: 100vh;
+}
+
+.shape{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: var(--size); height: var(--size);
+	border-top: var(--border) solid blue;
+	border-left: var(--border) solid blue;
+	border-radius: 5px;
+	box-shadow: -10px -10px white,
+	var(--border) var(--border) red,
+	calc( -1 * var(--border)) calc(2 * var(--border)) 0px 3px green,
+	calc(2 * var(--border)) calc( -1 * var(--border)) 0px 15px green,
+	inset calc(var(--border) / 4) calc(var(--border) / 4) red, 
+	inset var(--border) var(--border) blue;
+	filter: drop-shadow(calc(var(--border) / 2) calc(var(--border) / 2) 0px rgba(255,255,255,1));
+	background: transparent;
+	clip-path: polygon(150px 0, 300px 300px,0 300px);
+}
