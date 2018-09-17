@@ -1,0 +1,37 @@
+:root{
+			/*https://www.w3.org/TR/motion-1/*/
+}
+
+			
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	transform-style: preserve-3d;
+}
+
+.wrapper{
+	background: url(ggg.jpg); 
+	background-position: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+.block{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: red;
+	offset-path: path("m 1000, 150 q 900, 100 1000, 550 l 440, 400 q 470, 60 900,100 z");
+	animation: anime 8s linear infinite;
+}
+
+@keyframes anime{
+	from{offset-distance: 0%;}
+	to{offset-distance: 100%;}
+}
+
